@@ -1,4 +1,5 @@
 package be.technifutur.java2020.labo1.stages;
+import java.time.DateTimeException;
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -42,8 +43,11 @@ sout (format.format(dateAjd);
     }
 // parametre comme date local date donc year en premier ( on avait fait erreur dans sudoku)
     public void setDateDebut(int year , int month , int day) {
-
+//essai exception
          dateDebut = LocalDate.of(year, month, day);
+         if (dateDebut.isBefore(LocalDate.now())){
+             throw new DateTimeException("Tu veux créer un stage dans le passé ?");
+         }
     }
 
     public LocalDate getDateFin() {

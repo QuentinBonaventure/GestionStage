@@ -24,12 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="main debut , comme dans sudoku on cree les mvc">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
+    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="ajout comments , todo avec matière vue">
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/Stage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/Stage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/StageControler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/StageModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/stages/StageModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604512732074</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ajout comments , todo avec matière vue">
+      <created>1604520875623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604520875623</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,7 +119,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Regroupement par package + methode creer nouveau stage" />
     <MESSAGE value="main debut , comme dans sudoku on cree les mvc" />
-    <option name="LAST_COMMIT_MESSAGE" value="main debut , comme dans sudoku on cree les mvc" />
+    <MESSAGE value="ajout comments , todo avec matière vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout comments , todo avec matière vue" />
   </component>
   <component name="WindowStateProjectService">
     <state x="476" y="133" key="FileChooserDialogImpl" timestamp="1604517371501">
