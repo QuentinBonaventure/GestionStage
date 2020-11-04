@@ -10,14 +10,16 @@ public class StageModel {
 
 
         public void addStage(String name) {
-           stages.put(stages.size()+1, new Stage(name));
+
+            stages.put(stages.size()+1, new Stage(name));
         }
 
         public void removeStage() {
         }
 
     public HashMap<Integer, Stage> getStages() {
-        return stages;
+
+            return stages;
     }
 
     public void setName(String key, String name) {

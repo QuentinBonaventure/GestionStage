@@ -8,10 +8,7 @@ public class StageControler {
 private StageModel model;
 private StageVue vue;
 
-public StageControler(StageModel model , StageVue vue) {
-  this.model = model;
-  this.vue = vue;
-}
+
 
     public void setModel(StageModel model) {
 
