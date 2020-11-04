@@ -1,12 +1,21 @@
 package be.technifutur.java2020.labo1.stages;
-
+import java.util.Date;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Stage {
      private String name ;
      private LocalDate dateDebut;
      private LocalDate dateFin;
+     private Date dateAjd; // date de creation
+/*
+utiliser DateFormat pour creer une expression du genre ;
+SimpleDateFormat =null;
+Date dateAjd = new Date();
+formater = new SimpleDateFormat("dd-MM--yyyy");
+sout (format.format(dateAjd);
 
+ */
 //----------Constructeur
 
      public Stage (String name){

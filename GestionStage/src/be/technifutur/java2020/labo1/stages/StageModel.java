@@ -8,19 +8,29 @@ public class StageModel {
        private HashMap<Integer, Stage> stages = new HashMap<Integer, Stage>();
 
 
-
-        public void addStage(String name) {
-
-            stages.put(stages.size()+1, new Stage(name));
-        }
-
-        public void removeStage() {
-        }
+/*
+Constructeur
+ */
 
     public HashMap<Integer, Stage> getStages() {
 
-            return stages;
+        return stages;
     }
+/*
+  ajout stage , ajouter + 1 à la taille + new instance de stage avec name en par
+  exceptions quand on ajoute un test dans ctrl
+*/
+        public void addStage(String name) {
+
+            //TODO
+        }
+/*
+Supprimer stage
+ */
+        public void removeStage() {
+        }
+
+
 
     public void setName(String key, String name) {
             stages.get(key).setName(name);
