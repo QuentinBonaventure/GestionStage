@@ -6,15 +6,8 @@ import be.technifutur.java2020.labo1.StageVue;
 
 public class Main {
     public static void main(String[] args) {
-        StageVue vue = new StageVue();
-        ListStage model = new ListStage();
+        StageControler.saisieDate();
 
-        System.out.println("Application gestion stages sportifs ou culturels ");
 
-        //TODO
-
-      //  Map<String, Stage> maMapStage = new HashMap<>();
-       // maMapStage.put()
-      //  System.out.println(maMapStage);
     }
 }

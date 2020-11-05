@@ -12,7 +12,7 @@ import java.util.regex.Pattern;
     ListStage listStage = new ListStage();
     StageVue vue = new StageVue();
 
-    private Pattern datePattern = Pattern.compile("");
+
     //TODO
 
 
@@ -24,6 +24,8 @@ import java.util.regex.Pattern;
         System.out.println("Veuillez entrer le nom du stage à ajouter");
         String nomSaisi = scan.nextLine();
         System.out.println("Date du début du stage");
+        saisieDate();
+
 
         System.out.println("Date de fin du stage");
 

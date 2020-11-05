@@ -24,7 +24,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="Saisiedate modif">
+    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="AddStage essai d'imbriquer la saisie user">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" afterDir="false" />
@@ -54,7 +54,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../JavaBase/src/javaCollection/set" />
   </component>
-  <component name="RunManager" selected="Application.Stage">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.technifutur.java2020.labo1.Demo" />
       <module name="GestionStage" />
@@ -96,9 +96,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Stage" />
         <item itemvalue="Application.Demo" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604590383557</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="AddStage essai d'imbriquer la saisie user">
+      <created>1604592712645</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1604592712645</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +213,8 @@
     <MESSAGE value="suppression package stage inutil" />
     <MESSAGE value="test pour date" />
     <MESSAGE value="Saisiedate modif" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saisiedate modif" />
+    <MESSAGE value="AddStage essai d'imbriquer la saisie user" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddStage essai d'imbriquer la saisie user" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1604580730746">
