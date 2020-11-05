@@ -18,14 +18,19 @@ import java.util.regex.Pattern;
 
 
     public void addStage(){
-        LocalDateTime dateDebut = null;
-        LocalDateTime dateFin = null;
+        LocalDateTime dateDebut ;
+        LocalDateTime dateFin ;
         Scanner scan = new Scanner(System.in);
         System.out.println("Veuillez entrer le nom du stage à ajouter");
         String nomSaisi = scan.nextLine();
+        System.out.println("Date du début du stage");
+
+        System.out.println("Date de fin du stage");
+
+
 
     }
-    public void saisieDate(){
+    public  static void saisieDate(){
         Scanner scan = new Scanner(System.in);
         String formatDate ="dd/MM/yy  HH:mm";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatDate);

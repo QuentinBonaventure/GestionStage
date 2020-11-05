@@ -10,7 +10,8 @@ public class Main {
         ListStage model = new ListStage();
 
         System.out.println("Application gestion stages sportifs ou culturels ");
-       //TODO
+
+        //TODO
 
       //  Map<String, Stage> maMapStage = new HashMap<>();
        // maMapStage.put()

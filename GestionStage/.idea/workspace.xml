@@ -24,9 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="test pour date">
+    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="Saisiedate modif">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604583630797</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Saisiedate modif">
+      <created>1604590383557</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1604590383557</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -197,7 +205,8 @@
     <MESSAGE value="regroupement des heures et date dans localDateTime dateDebut et fin" />
     <MESSAGE value="suppression package stage inutil" />
     <MESSAGE value="test pour date" />
-    <option name="LAST_COMMIT_MESSAGE" value="test pour date" />
+    <MESSAGE value="Saisiedate modif" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saisiedate modif" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1604580730746">
@@ -209,25 +218,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="476" y="133" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604517371501" />
-    <state width="1300" height="71" key="GridCell.Tab.0.bottom" timestamp="1604581444013">
+    <state width="1323" height="100" key="GridCell.Tab.0.bottom" timestamp="1604592560941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1300" height="71" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604581444013" />
+    <state width="1323" height="100" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604592560941" />
     <state width="1317" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
-    <state width="1300" height="71" key="GridCell.Tab.0.center" timestamp="1604581444012">
+    <state width="1323" height="100" key="GridCell.Tab.0.center" timestamp="1604592560941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1300" height="71" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604581444012" />
+    <state width="1323" height="100" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604592560941" />
     <state width="1317" height="224" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1300" height="71" key="GridCell.Tab.0.left" timestamp="1604581444012">
+    <state width="1323" height="100" key="GridCell.Tab.0.left" timestamp="1604592560941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1300" height="71" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604581444012" />
+    <state width="1323" height="100" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604592560941" />
     <state width="1317" height="224" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1300" height="71" key="GridCell.Tab.0.right" timestamp="1604581444012">
+    <state width="1323" height="100" key="GridCell.Tab.0.right" timestamp="1604592560941">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1300" height="71" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604581444012" />
+    <state width="1323" height="100" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604592560941" />
     <state width="1317" height="224" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604587078054">
       <screen x="0" y="0" width="1366" height="728" />
