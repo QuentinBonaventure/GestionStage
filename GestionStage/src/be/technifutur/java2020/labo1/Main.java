@@ -8,8 +8,9 @@ public class Main {
     public static void main(String[] args) {
         StageVue vue = new StageVue();
         ListStage model = new ListStage();
-        StageControler controler = new StageControler();
+
         System.out.println("Application gestion stages sportifs ou culturels ");
+       //TODO
 
       //  Map<String, Stage> maMapStage = new HashMap<>();
        // maMapStage.put()
