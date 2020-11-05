@@ -11,11 +11,11 @@ public class Stage {
     Creation des variables ; avec localdate qui ne pourmettra d'appeler un formatter
      */
      private String name ;
-     private LocalDateTime dateDebut;
-     private LocalDateTime dateFin;
+     private LocalDate dateDebut;
+     private LocalDate dateFin;
      private LocalTime heureDebut;
      private LocalTime heureFin;
-     private Date dateAjd; // date de creation
+     //private Date dateAjd; // date de creation
 /*
 utiliser DateFormat pour creer une expression du genre ;
 SimpleDateFormat =null;
@@ -43,35 +43,60 @@ sout (format.format(dateAjd);
 
          this.name = name;
     }
-
-    public LocalDateTime getDateDebut() {
+/*
+Get et set datedebut
+ */
+    public LocalDate getDateDebut() {
 
          return dateDebut;
     }
 // parametre comme date local date donc year en premier ( on avait fait erreur dans sudoku)
-    public void setDateDebut(int year , int month , int day , int hour , int minute) {
+    public void setDateDebut(int year , int month , int day ) throws DateTimeException {
 //essai exception
-         dateDebut = LocalDateTime.of(year, month, day , hour , minute);
-         if (dateDebut.isBefore(LocalDateTime.now())){
+         dateDebut = LocalDate.of(year, month, day);
+         if (dateDebut.isBefore(LocalDate.now())){
              throw new DateTimeException("Tu veux créer un stage dans le passé ?");
          }
     }
 
-    public LocalDateTime getDateFin() {
+   /*
+   Date fin get et set
+    */
 
-         return dateFin;
+    public LocalDate getDateFin() {
+
+         return dateFin ;
     }
 // pareil que setDateDebut écrit à l'envers
-    public void setDateFin(int year , int month , int day , int hour , int minute) {
+    public void setDateFin(int year , int month , int day ) throws DateTimeException {
 
-         dateFin = LocalDateTime.of(year, month, day , hour , minute);
+         dateFin = LocalDate.of(year, month, day);
+         if (dateFin.isBefore(dateDebut)){
+             throw new DateTimeException("La date du stage ne peut pas se finir avec le commencement de celui ci ");
+         }
+
     }
 
 
+    public LocalTime getHeureDebut() {
+        return heureDebut;
+    }
 
+    public void setHeureDebut(int hour , int minute) throws DateTimeException {
+        heureDebut = LocalTime.of(hour, minute);
+        if (heureDebut.isBefore(LocalTime.now())){
+            throw new DateTimeException("Vous ne pouvez pas créer un stage qui a déjà commencé");
+        }
+    }
 
+    public LocalTime getHeureFin() {
+        return heureFin;
+    }
 
-
-
-
+    public void setHeureFin(int hour , int minute) throws DateTimeException {
+        heureFin = LocalTime.of(hour , minute);
+        if (heureFin.isBefore(heureDebut)){
+            throw new DateTimeException("Votre stage ne peut pas se finir avec le début de celui ci ")
+        }
+    }
 }

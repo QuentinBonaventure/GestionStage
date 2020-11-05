@@ -38,13 +38,13 @@ Supprimer stage
 
         }
 
-        public void setDateDebut(String key, int year, int month, int day , int hour , int minute) {
-           stages.get(key).setDateDebut(year, month, day , hour , minute);
+        public void setDateDebut(String key, int year, int month, int day ) {
+           stages.get(key).setDateDebut(year, month, day );
 
         }
 
-        public void setDateFin(String key, int year, int month, int day ,int hour , int minute) {
-            stages.get(key).setDateFin(year, month, day , hour , minute);
+        public void setDateFin(String key, int year, int month, int day ) {
+            stages.get(key).setDateFin(year, month, day );
 
         }
 // application exemple vu le test sur les collections
