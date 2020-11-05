@@ -5,10 +5,10 @@ import java.time.format.DateTimeFormatter;
 public class StageVue {
     //affichage stage
 
-    private StageModel model;
+    private ListStage model;
 
 
-    public void setModel(StageModel model){
+    public void setModel(ListStage model){
  this.model =model;
 }
 
@@ -17,6 +17,9 @@ public class StageVue {
         DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
         System.out.println("Voici la liste de nos stages\n");
         System.out.println("nom du stage : "+"  " + "Debut du stage : "+"  " + "Fin du Stage :" +"  ");
+
+
+
         //formatter à aller revoir
         //TODO
 

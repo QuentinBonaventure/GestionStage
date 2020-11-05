@@ -1,9 +1,10 @@
 package be.technifutur.java2020.labo1.stages;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
-public class StageModel {
+public class ListStage {
         // Collection de Stage
        private HashMap<Integer, Stage> stages = new HashMap<Integer, Stage>();
 
@@ -37,23 +38,23 @@ Supprimer stage
 
         }
 
-        public void setDateDebut(String key, int year, int month, int day) {
-           stages.get(key).setDateDebut(year, month, day);
+        public void setDateDebut(String key, int year, int month, int day , int hour , int minute) {
+           stages.get(key).setDateDebut(year, month, day , hour , minute);
 
         }
 
-        public void setDateFin(String key, int year, int month, int day) {
-            stages.get(key).setDateFin(year, month, day);
+        public void setDateFin(String key, int year, int month, int day ,int hour , int minute) {
+            stages.get(key).setDateFin(year, month, day , hour , minute);
 
         }
-
+// application exemple vu le test sur les collections
         public LocalDate getDateDebut(Integer key) {
             LocalDate dateDebut = LocalDate.of(stages.get(key).getDateDebut().getYear(),
                     stages.get(key).getDateDebut().getMonth(),
                     stages.get(key).getDateDebut().getDayOfMonth());
             return dateDebut;
         }
-
+// pareil qu'au dessus appli
         public LocalDate getDateFin(Integer key){
             LocalDate dateFin = LocalDate.of(stages.get(key).getDateFin().getYear(),
                    stages.get(key).getDateFin().getMonth(),

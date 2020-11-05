@@ -1,13 +1,13 @@
 package be.technifutur.java2020.labo1;
 
 import be.technifutur.java2020.labo1.stages.StageControler;
-import be.technifutur.java2020.labo1.stages.StageModel;
+import be.technifutur.java2020.labo1.stages.ListStage;
 import be.technifutur.java2020.labo1.stages.StageVue;
 
 public class Main {
     public static void main(String[] args) {
         StageVue vue = new StageVue();
-        StageModel model = new StageModel();
+        ListStage model = new ListStage();
         StageControler controler = new StageControler();
         System.out.println("Application gestion stages sportifs ou culturels ");
 

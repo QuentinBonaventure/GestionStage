@@ -7,13 +7,13 @@ public class StageControler {
     /*
     Relier avec le set model et le set vue
      */
-private StageModel model;
+private ListStage model;
 private StageVue vue;
 private Pattern datePattern = Pattern.compile("");
 //TODO
 
 
-    public void setModel(StageModel model) {
+    public void setModel(ListStage model) {
 
     this.model = model;
     }
