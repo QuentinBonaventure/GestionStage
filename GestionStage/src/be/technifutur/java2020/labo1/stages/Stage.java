@@ -96,7 +96,7 @@ Get et set datedebut
     public void setHeureFin(int hour , int minute) throws DateTimeException {
         heureFin = LocalTime.of(hour , minute);
         if (heureFin.isBefore(heureDebut)){
-            throw new DateTimeException("Votre stage ne peut pas se finir avec le début de celui ci ")
+            throw new DateTimeException("Votre stage ne peut pas se finir avec le début de celui ci ");
         }
     }
 }
