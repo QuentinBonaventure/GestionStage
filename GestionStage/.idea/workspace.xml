@@ -24,9 +24,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="modif add et pattern saisieuser mais probleme &#10;Commencement du menu pour l'organisateur">
+    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="AddStage et saisieStage ok !!!!!">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ActiviteControler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Controler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604657249177</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="AddStage et saisieStage ok !!!!!">
+      <created>1604660296378</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1604660296379</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -230,7 +238,8 @@
     <MESSAGE value="AddStage essai d'imbriquer la saisie user" />
     <MESSAGE value="add et saisie user &#10;faut encore changer le pattern qui n'est pas le bon" />
     <MESSAGE value="modif add et pattern saisieuser mais probleme &#10;Commencement du menu pour l'organisateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="modif add et pattern saisieuser mais probleme &#10;Commencement du menu pour l'organisateur" />
+    <MESSAGE value="AddStage et saisieStage ok !!!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="AddStage et saisieStage ok !!!!!" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1604580730746">
@@ -242,25 +251,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="476" y="133" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604517371501" />
-    <state width="1323" height="96" key="GridCell.Tab.0.bottom" timestamp="1604656304273">
+    <state width="1323" height="95" key="GridCell.Tab.0.bottom" timestamp="1604665322575">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="96" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604656304273" />
+    <state width="1323" height="95" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322575" />
     <state width="1317" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
-    <state width="1323" height="96" key="GridCell.Tab.0.center" timestamp="1604656304272">
+    <state width="1323" height="95" key="GridCell.Tab.0.center" timestamp="1604665322574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="96" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604656304272" />
+    <state width="1323" height="95" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
     <state width="1317" height="224" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1323" height="96" key="GridCell.Tab.0.left" timestamp="1604656304272">
+    <state width="1323" height="95" key="GridCell.Tab.0.left" timestamp="1604665322574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="96" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604656304272" />
+    <state width="1323" height="95" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
     <state width="1317" height="224" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1323" height="96" key="GridCell.Tab.0.right" timestamp="1604656304272">
+    <state width="1323" height="95" key="GridCell.Tab.0.right" timestamp="1604665322574">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="96" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604656304272" />
+    <state width="1323" height="95" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
     <state width="1317" height="224" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604587078054">
       <screen x="0" y="0" width="1366" height="728" />
