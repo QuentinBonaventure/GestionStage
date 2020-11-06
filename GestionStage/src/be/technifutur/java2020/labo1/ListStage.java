@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
+import java.util.Map;
 
 public  class ListStage {
         // Collection de Stage
@@ -19,7 +20,13 @@ public  class ListStage {
 
        }
 
-       public void getList(){
+
+       public void afficheList(){
+           int i = 1;
+           for(Map.Entry map : maListeStage.entrySet()){
+               System.out.println("Stage : "+ i + ":" + map.getValue());
+               i++;
+           }
 
        }
 
