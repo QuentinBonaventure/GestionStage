@@ -24,11 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="AddStage et saisieStage ok !!!!!">
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ActiviteControler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Controler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" afterDir="false" />
+    <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="regroupement dans controler abstract et creation controler activite">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ListActivites.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604660296379</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="regroupement dans controler abstract et creation controler activite">
+      <created>1604665582219</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1604665582219</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +243,8 @@
     <MESSAGE value="add et saisie user &#10;faut encore changer le pattern qui n'est pas le bon" />
     <MESSAGE value="modif add et pattern saisieuser mais probleme &#10;Commencement du menu pour l'organisateur" />
     <MESSAGE value="AddStage et saisieStage ok !!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddStage et saisieStage ok !!!!!" />
+    <MESSAGE value="regroupement dans controler abstract et creation controler activite" />
+    <option name="LAST_COMMIT_MESSAGE" value="regroupement dans controler abstract et creation controler activite" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1604580730746">
