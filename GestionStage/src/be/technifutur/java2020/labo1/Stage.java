@@ -17,31 +17,8 @@ public class Stage {
      private LocalDateTime dateFin;
 
 
-       /* Scanner scan = new Scanner(System.in);
-        LocalDateTime date = LocalDateTime.of(1990,05,27,9,00);
-        System.out.println(date);
-        DateTimeFormatter formatter =DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm");
-        String modifFormatter = date.format(formatter);
-        System.out.println(modifFormatter);
 
-        System.out.println("veuillez entrer la date de début du stage :     ");
-
-*/
-
-
-
-     //private Date dateAjd; // date de creation
-/*
-utiliser DateFormat pour creer une expression du genre ;
-SimpleDateFormat =null;
-Date dateAjd = new Date();
-formater = new SimpleDateFormat("dd-MM--yyyy");
-sout (format.format(dateAjd);
-
- */
-//----------Constructeur
-
-     public Stage (String name , LocalDateTime dateDebut , LocalDateTime dateFin){
+     public Stage (){
          this.name = name;
          this.dateDebut = dateDebut;
          this.dateFin = dateFin;
@@ -69,12 +46,10 @@ Get et set datedebut
          return dateDebut;
     }
 // parametre comme date local date donc year en premier ( on avait fait erreur dans sudoku)
-    public void setDateDebut(LocalDateTime dateDebut) throws DateTimeException {
+    public void setDateDebut(LocalDateTime dateDebut)  {
 //essai exception
          this.dateDebut = dateDebut;
-         if (dateDebut.isBefore(LocalDateTime.now())){
-             throw new DateTimeException("Tu veux créer un stage dans le passé ?");
-         }
+
     }
 
    /*
@@ -86,11 +61,10 @@ Get et set datedebut
          return dateFin ;
     }
 // pareil que setDateDebut écrit à l'envers
-    public void setDateFin(LocalDateTime dateFin ) throws DateTimeException {
+    public void setDateFin(LocalDateTime dateFin )  {
 
          this.dateFin = dateFin;
-         if (dateFin.isBefore(dateDebut)){
-             throw new DateTimeException("La date du stage ne peut pas se finir avec le commencement de celui ci ");
+
          }
 
     }
@@ -101,4 +75,4 @@ Get et set datedebut
 
 
 
-}
+
