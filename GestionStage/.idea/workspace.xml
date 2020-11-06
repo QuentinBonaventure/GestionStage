@@ -26,7 +26,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5517d0d9-f9a5-4d53-bcf6-1a53d92ecf74" name="Default Changelist" comment="modif add et pattern saisieuser mais probleme &#10;Commencement du menu pour l'organisateur">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ListStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ListStage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageControler.java" afterDir="false" />
     </list>

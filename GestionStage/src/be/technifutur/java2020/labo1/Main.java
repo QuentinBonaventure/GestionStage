@@ -9,7 +9,8 @@ import java.time.LocalDateTime;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Bienvenue dans votre  gestionnaire de Stage");
-        StageControler.addStage();
+         StageControler stageCtrl = new StageControler();
+         StageControler.addStage();
 
 
 

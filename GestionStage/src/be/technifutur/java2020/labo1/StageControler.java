@@ -27,6 +27,7 @@ import java.util.regex.Pattern;
         System.out.println("Veuillez entrer le nom du stage à ajouter");
          nomSaisi = scan.nextLine();
         System.out.println("Date du début du stage");
+
          dateDebut = saisieDate();
         System.out.println("Date de fin du stage");
         dateFin = saisieDate();
@@ -53,7 +54,7 @@ import java.util.regex.Pattern;
     }
     public static LocalDateTime saisieDate(){
         Scanner scan = new Scanner(System.in);
-        String formatDate ="dd/MM/yy  HH:mm";
+        String formatDate ="dd/MM/yyyy HH:mm";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(formatDate);
         System.out.println("Insérer une date au format suivant : JJ/MM/AAAA HH:MM");
         String saisieUser =  scan.nextLine();
