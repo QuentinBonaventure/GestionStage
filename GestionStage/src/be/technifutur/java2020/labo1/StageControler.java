@@ -2,6 +2,7 @@ package be.technifutur.java2020.labo1;
 import be.technifutur.java2020.labo1.AbstractControler;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
+import java.util.HashMap;
 import java.util.Scanner;
 
 public class StageControler extends AbstractControler {
@@ -20,21 +21,31 @@ public void addStage(ListStage maMapStage , String name , Stage monStage){
     }
 }
 
-public void removeStage(ListStage maMapStage , String name, Stage monStage){
-    if (! maMapStage.getListeStage().containsKey(name)){
+public void removeStage(ListStage maMapStage , String stageKey){
+    if (! maMapStage.getListeStage().containsKey(stageKey)){
         System.out.println("Ce stage n'existe pas ");
     }else {
-        maMapStage.getListeStage().remove(name);
-        System.out.println("Le stage "+ name +" a bien été supprimé");
+        maMapStage.getListeStage().remove(stageKey);
+        System.out.println("Le stage "+ stageKey +" a bien été supprimé");
     }
 }
     public void remplaceStage(ListStage maMapStage , String ancien, String nouveau , Stage monStage){
-        if (! maMapStage.getListeStage().containsKey(ancien)){
+        if (! this.contient(maMapStage.getListeStage(), ancien)){
             System.out.println("Ce stage n'existe pas , il n'est donc pas possible de le remplacer ");
         }else {
-            this.removeStage(maMapStage , ancien); //TODO
+            this.removeStage (maMapStage, ancien);
             this.addStage(maMapStage , nouveau , monStage);
         }
+    }
+
+
+    public boolean contient(HashMap maMapStage , String key){
+        boolean contenir = false;
+        if (maMapStage.containsKey(key)){
+            contenir = true;
+        }
+        return contenir;
+
     }
 
 

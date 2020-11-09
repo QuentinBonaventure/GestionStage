@@ -25,7 +25,9 @@ public class StageVue {
 
 
     }
-public void afficheMenu(){
+
+
+public void afficheMenuCreationStage(){
     System.out.println("Tu as les droits pour gerer un stage .");
     System.out.println("Choisis le numéro correspondant à l'action souhaitée  \n1. Afficher la liste des stages \n2. Ajouter Stage \n3. Supprimer Stage");
     Scanner scan = new Scanner(System.in);
@@ -39,7 +41,7 @@ public void afficheMenu(){
         case 1 : afficheListeStage(maListeStage);
            break;
 
-        case 2 : //TODO
+        case 2 :  CreationStage();
             break;
         case 3 : //TODO
 
@@ -49,7 +51,7 @@ public void afficheMenu(){
     }
 }
 
-    public static  void addStage() throws  DateTimeException{
+    public static  void CreationStage() throws  DateTimeException{
         String nomSaisi;
         LocalDateTime dateDebut ;
         LocalDateTime dateFin ;
