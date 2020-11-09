@@ -2,12 +2,9 @@ package be.technifutur.java2020.labo1;
 import java.time.DateTimeException;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Date;
+import java.util.*;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.util.HashMap;
-import java.util.Objects;
-import java.util.Scanner;
 
 public class Stage {
 
@@ -29,6 +26,55 @@ public class Stage {
          listeActivite = new HashMap<>();
 
      }
+
+ // get pour  activités
+    public HashMap<String , Activite> getListeActivite(){
+         return listeActivite;
+    }
+
+    public void addActivite(ListStage maListeStage, String nouveau, Activite monActivite){
+         if(this.horaireActiviteValid(monActivite)){
+             this.listeActivite.put(monActivite.getName(), monActivite);
+             System.out.println("L'activité " + monActivite.getName() +" a bien été ajoutée au stage");
+         }else {
+             System.out.println("La date de l'activité ne correspond pas au stage");
+         }
+
+    }
+    public void removeActivite( ListStage maMapStage , String key){
+       if( maMapStage.getListeStage().containsKey(key))
+       {  this.listeActivite.remove(key);
+       }else{
+           System.out.println("Cette activité n'existe pas encore , vous ne pouvez donc pas la supprimer");
+       }
+    }
+
+    public void remplacerActivite( ListStage maListeStage, String ancien , String nouveau , Activite monActivite){
+         if (this.contient(maListeStage.getListeStage(), ancien)){
+             this.removeActivite(maListeStage , ancien);
+             this.addActivite(maListeStage , nouveau , monActivite);
+         }
+
+
+    }
+    public boolean horaireActiviteValid(Activite monActivite) {
+        boolean ok = false;
+        if ((monActivite.getDateDebut().isAfter(this.getDateDebut())) &&
+                (this.getDateFin().isAfter(monActivite.getDateDebut().plusMinutes(monActivite.getDuree())))) {
+            ok = true;
+        }
+        return ok;
+    }
+
+    public boolean contient(HashMap maMap , String key){
+        boolean contenir = false;
+        if (maMap.containsKey(key)){
+            contenir = true;
+        }
+        return contenir;
+
+    }
+
 
 
 // ----------Guetter & Setter
@@ -67,6 +113,8 @@ public class Stage {
          this.dateFin = dateFin;
 
          }
+
+
          @Override
     public boolean equals(Object o){
          if ( this == o) return true ;

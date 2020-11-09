@@ -7,19 +7,23 @@ import java.util.Objects;
 public class Activite {
     String name;
     LocalDateTime dateDebut;
-    LocalTime duree;
+
+    int duree;
 
     public Activite() {
         this.name = name;
         this.dateDebut = dateDebut;
         this.duree = duree;
+
     }
 
-    public LocalTime getDuree() {
-        return duree;
+    public int getDuree() {
+
+       return duree;
     }
 
     public void setDuree(LocalTime duree) {
+
         this.duree = duree;
     }
 

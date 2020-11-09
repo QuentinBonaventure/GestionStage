@@ -39,9 +39,9 @@ public void removeStage(ListStage maMapStage , String stageKey){
     }
 
 
-    public boolean contient(HashMap maMapStage , String key){
+    public boolean contient(HashMap maMap , String key){
         boolean contenir = false;
-        if (maMapStage.containsKey(key)){
+        if (maMap.containsKey(key)){
             contenir = true;
         }
         return contenir;
