@@ -1,5 +1,5 @@
 package be.technifutur.java2020.labo1;
-
+import be.technifutur.java2020.labo1.AbstractControler;
 import java.time.DateTimeException;
 import java.time.LocalDateTime;
 import java.util.Scanner;
@@ -10,9 +10,32 @@ public class StageControler extends AbstractControler {
    private StageVue vue = new StageVue();
 
 
+public void addStage(ListStage maMapStage , String name , Stage monStage){
 
+    if( maMapStage.getListeStage().containsKey(name)){
+        System.out.println("Ce stage existe déjà");
+    }else{
+        maMapStage.getListeStage().put(name, monStage);
+        System.out.println("Votre nouveau stage : " +name + "a été ajouté ");
+    }
+}
 
-
+public void removeStage(ListStage maMapStage , String name, Stage monStage){
+    if (! maMapStage.getListeStage().containsKey(name)){
+        System.out.println("Ce stage n'existe pas ");
+    }else {
+        maMapStage.getListeStage().remove(name);
+        System.out.println("Le stage "+ name +" a bien été supprimé");
+    }
+}
+    public void remplaceStage(ListStage maMapStage , String ancien, String nouveau , Stage monStage){
+        if (! maMapStage.getListeStage().containsKey(ancien)){
+            System.out.println("Ce stage n'existe pas , il n'est donc pas possible de le remplacer ");
+        }else {
+            this.removeStage(maMapStage , ancien); //TODO
+            this.addStage(maMapStage , nouveau , monStage);
+        }
+    }
 
 
 

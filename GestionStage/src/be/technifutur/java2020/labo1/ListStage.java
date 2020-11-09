@@ -1,14 +1,12 @@
 package be.technifutur.java2020.labo1;
 
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 import java.util.Map;
 
 public  class ListStage {
         // Collection de Stage modèle
-       public static HashMap<Integer, Stage> maListeStage = new HashMap<>();
+       public static HashMap<String, Stage> maListeStage = new HashMap<>();
        public static Stage stage;
 
     public ListStage() {
@@ -31,6 +29,11 @@ public  class ListStage {
                i++;
            }
 
+           }
+            public HashMap<String, Stage> getListeStage() {
+                return maListeStage;
+            }
+
        }
 
 
@@ -41,5 +44,5 @@ public  class ListStage {
 
 
 
-    }
+
 

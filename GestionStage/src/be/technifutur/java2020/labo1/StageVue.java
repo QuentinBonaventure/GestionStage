@@ -70,7 +70,6 @@ public void afficheMenu(){
         }else {
             System.out.println("Stage ajouté !");
 
-
         }
         ListStage.add(nomSaisi,dateDebut,dateFin);
 
