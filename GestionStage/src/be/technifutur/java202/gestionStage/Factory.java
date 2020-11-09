@@ -18,7 +18,7 @@ public class Factory {
     private Saisie<LocalDateTime> saisieDebut;
     private StageList stageList;
 
-    public CreationStage getCreatrionStage() {
+    public CreationStage getCreationStage() {
         if (this.creationStage == null) {
             this.creationStage = new CreationStage();
             this.creationStage.setStageList(getStageList());

@@ -7,13 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public  class ListStage {
-        // Collection de Stage
+        // Collection de Stage modèle
        public static HashMap<Integer, Stage> maListeStage = new HashMap<>();
        public static Stage stage;
 
-       public static void add(String saisieUser , LocalDateTime dateDebut , LocalDateTime dateFin){
+    public ListStage() {
+
+    }
+
+    public static void add(String saisieUser , LocalDateTime dateDebut , LocalDateTime dateFin){
            Stage stage1 = new Stage();
-           stage = stage;
            stage1.setName(saisieUser);
            stage1.setDateDebut(dateDebut);
            stage1.setDateFin(dateFin);
@@ -34,9 +37,7 @@ public  class ListStage {
 
 
 
-/*
-Constructeur
- */
+
 
 
 

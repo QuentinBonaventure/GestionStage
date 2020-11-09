@@ -5,9 +5,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.HashMap;
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Stage {
+
 
     /*
     Creation des variables ; avec localdatetime
@@ -15,13 +18,15 @@ public class Stage {
      private String name ;
      private LocalDateTime dateDebut;
      private LocalDateTime dateFin;
+     HashMap <String , Activite> listeActivite;
 
-
+//constructeur
 
      public Stage (){
          this.name = name;
          this.dateDebut = dateDebut;
          this.dateFin = dateFin;
+         listeActivite = new HashMap<>();
 
      }
 
@@ -38,36 +43,59 @@ public class Stage {
 
          this.name = name;
     }
-/*
-Get et set datedebut
- */
+
     public LocalDateTime getDateDebut() {
 
          return dateDebut;
     }
-// parametre comme date local date donc year en premier ( on avait fait erreur dans sudoku)
+
     public void setDateDebut(LocalDateTime dateDebut)  {
-//essai exception
+
          this.dateDebut = dateDebut;
 
     }
 
-   /*
-   Date fin get et set
-    */
+
 
     public LocalDateTime getDateFin() {
 
          return dateFin ;
     }
-// pareil que setDateDebut écrit à l'envers
+
     public void setDateFin(LocalDateTime dateFin )  {
 
          this.dateFin = dateFin;
 
          }
+         @Override
+    public boolean equals(Object o){
+         if ( this == o) return true ;
+         if(o == null || getClass() != o.getClass()) return false;
 
+         Stage stage = (Stage) o;
+
+         if(!name.equals(stage.name)) return false;
+         if(dateDebut !=null ? !dateDebut.equals(stage.dateDebut) : stage.dateDebut !=null) return false;
+         return dateFin !=null ? dateFin.equals(stage.dateFin) : stage.dateFin == null;
+         }
+
+    @Override
+    public int hashCode() {
+         int result = name.hashCode();
+         result = 31 * result +(dateDebut != null ? dateDebut.hashCode() : 0);
+         result = 31 *result +(dateFin != null ? dateFin.hashCode() : 0);
+        return result;
     }
+
+    @Override
+    public String toString() {
+        return "Stage{" +
+                "name='" + name + '\'' +
+                ", dateDebut=" + dateDebut +
+                ", dateFin=" + dateFin +
+                '}';
+    }
+}
 
 
 

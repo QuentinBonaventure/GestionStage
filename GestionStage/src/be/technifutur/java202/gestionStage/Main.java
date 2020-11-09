@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Factory factory = new Factory();
-        CreationStage ctrl = factory.getCreatrionStage();
+        CreationStage ctrl = factory.getCreationStage();
         ctrl.run();
 
     }
