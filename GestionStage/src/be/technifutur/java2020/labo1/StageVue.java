@@ -32,11 +32,7 @@ public void afficheMenuCreationStage(){
     System.out.println("Choisis le numéro correspondant à l'action souhaitée  \n1. Afficher la liste des stages \n2. Ajouter Stage \n3. Supprimer Stage");
     Scanner scan = new Scanner(System.in);
     int choix = scan.nextInt();
-    if (choix ==0 || choix >3) {
-        System.out.println("Le numéro rentré ne correspond pas à un des choix disponibles");
-        System.out.println("Que veux tu faire ? \n1. Afficher la liste des stages \n2. Ajouter Stage \n3. Supprimer Stage");
-        choix = scan.nextInt();
-    }
+
     switch(choix) {
         case 1 : afficheListeStage(maListeStage);
            break;
