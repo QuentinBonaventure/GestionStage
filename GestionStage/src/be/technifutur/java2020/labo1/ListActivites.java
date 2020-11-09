@@ -9,7 +9,7 @@ public class ListActivites {
     public static  HashMap<Integer , Activite> maListeActivtés = new HashMap<>();
     public static Activite activite;
 
-    public static void add(String saisieUser , LocalDateTime dateDebut , LocalTime duree){
+    public static void add(String saisieUser , LocalDateTime dateDebut , int duree){
         Activite activite1 = new Activite();
         activite1.setName(saisieUser);
         activite1.setDateDebut(dateDebut);

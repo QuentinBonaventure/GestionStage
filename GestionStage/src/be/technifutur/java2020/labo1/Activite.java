@@ -1,7 +1,6 @@
 package be.technifutur.java2020.labo1;
 
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.Objects;
 
 public class Activite {
@@ -22,9 +21,9 @@ public class Activite {
        return duree;
     }
 
-    public void setDuree(LocalTime duree) {
+    public void setDuree(int duree) {
 
-        this.duree = duree;
+       this.duree = duree;
     }
 
     public LocalDateTime getDateDebut() {
