@@ -17,7 +17,7 @@ public class StageVue {
 
 
 
-    public void afficheListeStage(HashMap maListeStage){
+    public static void afficheListeStage(HashMap maListeStage){
         // formatter le date type cfr javadoc DateTime
 
         System.out.println("Voici la liste de nos stages\n");
@@ -29,19 +29,26 @@ public class StageVue {
 
 public void afficheMenuCreationStage(){
     System.out.println("Tu as les droits pour gerer un stage .");
-    System.out.println("Choisis le numéro correspondant à l'action souhaitée  \n1. Afficher la liste des stages \n2. Ajouter Stage \n3. Supprimer Stage");
+    System.out.println("Choisis le numéro correspondant à l'action souhaitée  \n1. Afficher la liste des stages \n2. Ajouter Stage \n3. Supprimer Stage\n4. Remplacer un stage\n5. Afficher les activités d'un stage");
     Scanner scan = new Scanner(System.in);
     int choix = scan.nextInt();
 
     switch(choix) {
-        case 1 : afficheListeStage(maListeStage);
+        case 1 : StageVue.afficheListeStage(maListeStage);
            break;
 
         case 2 :  CreationStage();
             break;
-        case 3 : //TODO
+        case 3 :
 
             break;
+        case 4 :
+            break;
+
+        case 5 :
+
+            break;
+
         default:
             throw new IllegalStateException("Unexpected value: " + choix);
     }
@@ -68,8 +75,10 @@ public void afficheMenuCreationStage(){
         }else {
             System.out.println("Stage ajouté !");
 
+
         }
         ListStage.add(nomSaisi,dateDebut,dateFin);
+
 
     }
     }
