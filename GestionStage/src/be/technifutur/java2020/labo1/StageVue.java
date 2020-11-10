@@ -38,6 +38,8 @@ public void afficheMenuCreationStage(){
            break;
 
         case 2 :  CreationStage();
+                    StageVue.afficheListeStage(maListeStage);
+
             break;
         case 3 :
 
@@ -78,6 +80,7 @@ public void afficheMenuCreationStage(){
 
         }
         ListStage.add(nomSaisi,dateDebut,dateFin);
+
 
 
     }
