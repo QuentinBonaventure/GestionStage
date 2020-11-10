@@ -3,6 +3,7 @@ package be.technifutur.java2020.labo1;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 
 public  class ListStage {
@@ -20,10 +21,11 @@ public  class ListStage {
            stage1.setDateDebut(dateDebut);
            stage1.setDateFin(dateFin);
 
+
        }
 
 
-       public void afficheList(){
+     /* public void afficheList(){
            int i = 1;
            for(Map.Entry map : maListeStage.entrySet()){
                System.out.println("Stage : "+ i + ":" + map.getValue());
@@ -31,9 +33,13 @@ public  class ListStage {
            }
 
            }
+           */
+
             public LinkedHashMap<String, Stage> getListeStage() {
                 return maListeStage;
             }
+
+
 
        }
 

@@ -24,10 +24,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7bc995ef-ebdd-45bc-b165-a967084bacb6" name="Default Changelist" comment="">
+    <list default="true" id="7bc995ef-ebdd-45bc-b165-a967084bacb6" name="Default Changelist" comment="Correction du bug dans workspace xml">
+      <change afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java202/gestionStage/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java202/gestionStage/Factory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/StageVue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ListStage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/ListStage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/be/technifutur/java2020/labo1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +70,20 @@
       <recent name="be.technifutur.java202.gestionStage.model" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="be.technifutur.java2020.labo1.Main" />
+      <module name="GestionStage" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="be.technifutur.java2020.labo1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="be.technifutur.java202.gestionStage.Main" />
       <module name="GestionStage" />
@@ -85,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -101,10 +116,26 @@
       <option name="project" value="LOCAL" />
       <updated>1604661791715</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correction du bug dans workspace xml">
+      <created>1605000826791</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605000826791</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -123,7 +154,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout de la classe Stage" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la classe Stage" />
+    <MESSAGE value="Correction du bug dans workspace xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correction du bug dans workspace xml" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="48" key="#com.intellij.ide.util.MemberChooser" timestamp="1604580730746">
@@ -135,25 +167,25 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="476" y="133" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604517371501" />
-    <state width="1323" height="95" key="GridCell.Tab.0.bottom" timestamp="1604665322575">
+    <state width="1300" height="99" key="GridCell.Tab.0.bottom" timestamp="1605005412048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="95" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322575" />
+    <state width="1300" height="99" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1605005412048" />
     <state width="1317" height="224" key="GridCell.Tab.0.bottom/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
-    <state width="1323" height="95" key="GridCell.Tab.0.center" timestamp="1604665322574">
+    <state width="1300" height="99" key="GridCell.Tab.0.center" timestamp="1605005412048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="95" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
+    <state width="1300" height="99" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1605005412048" />
     <state width="1317" height="224" key="GridCell.Tab.0.center/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1323" height="95" key="GridCell.Tab.0.left" timestamp="1604665322574">
+    <state width="1300" height="99" key="GridCell.Tab.0.left" timestamp="1605005412047">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="95" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
+    <state width="1300" height="99" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1605005412047" />
     <state width="1317" height="224" key="GridCell.Tab.0.left/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288344" />
-    <state width="1323" height="95" key="GridCell.Tab.0.right" timestamp="1604665322574">
+    <state width="1300" height="99" key="GridCell.Tab.0.right" timestamp="1605005412048">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="95" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1604665322574" />
+    <state width="1300" height="99" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@0.0.1366.728" timestamp="1605005412048" />
     <state width="1317" height="224" key="GridCell.Tab.0.right/0.0.1366.728/1366.0.1360.728@1366.0.1360.728" timestamp="1604571288345" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604587078054">
       <screen x="0" y="0" width="1366" height="728" />
