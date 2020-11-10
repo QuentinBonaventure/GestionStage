@@ -1,9 +1,5 @@
 package be.technifutur.java2020.labo1;
-import java.time.DateTimeException;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.*;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Stage {
@@ -32,7 +28,7 @@ public class Stage {
          return listeActivite;
     }
 
-    public void addActivite(ListStage maListeStage, String nouveau, Activite monActivite){
+    public void addActivite(Activite monActivite){
          if(this.horaireActiviteValid(monActivite)){
              this.listeActivite.put(monActivite.getName(), monActivite);
              System.out.println("L'activité " + monActivite.getName() +" a bien été ajoutée au stage");
@@ -41,22 +37,11 @@ public class Stage {
          }
 
     }
-    public void removeActivite( ListStage maMapStage , String key){
-       if( maMapStage.getListeStage().containsKey(key))
-       {  this.listeActivite.remove(key);
-       }else{
-           System.out.println("Cette activité n'existe pas encore , vous ne pouvez donc pas la supprimer");
-       }
+    public void removeActivite(  String key){
+      this.listeActivite.remove(key);
     }
 
-    public void remplacerActivite( ListStage maListeStage, String ancien , String nouveau , Activite monActivite){
-         if (this.contient(maListeStage.getListeStage(), ancien)){
-             this.removeActivite(maListeStage , ancien);
-             this.addActivite(maListeStage , nouveau , monActivite);
-         }
 
-
-    }
     public boolean horaireActiviteValid(Activite monActivite) {
         boolean ok = false;
         if ((monActivite.getDateDebut().isAfter(this.getDateDebut())) &&
